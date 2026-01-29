@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Container */
+header div {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+header a:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+}
+
+/* Nav List */
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+/* Links */
+header ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4b5563;
+  padding: 6px 4px;
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+header ul li a:hover {
+  color: #111827;
+}
+
+/* Active NavLink */
+header ul li a.active {
+  color: #2563eb; /* Professional blue */
+  border-bottom: 2px solid #2563eb;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  header div {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

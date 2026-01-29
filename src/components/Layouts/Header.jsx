@@ -1,5 +1,22 @@
+import { NavLink } from "react-router-dom"
+
 export const Header = ()=>{
     return(
-        <h1>Welcome Header</h1>
+        <header>
+            <div>
+                <NavLink to="/">DeepReactQuery</NavLink>
+                <ul>
+                    <li>
+                        <NavLink to="/">Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/trad">FetchOld</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/rq">FetchRQ</NavLink>
+                    </li>
+                </ul>
+            </div>
+        </header>
     )
 }
