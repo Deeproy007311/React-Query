@@ -71,6 +71,6 @@ src/
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/react-posts-app.git
+git clone https://github.com/Deeproy007311/React-Query.git
 
 
