@@ -196,3 +196,34 @@ header ul li a.active {
     opacity: 1;
   }
 }
+/* ===== FOOTER ===== */
+
+footer {
+  margin-top: 60px;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+footer p {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280; /* subtle gray */
+  letter-spacing: 0.3px;
+}
+
+/* Highlight name */
+footer p span {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  footer p {
+    font-size: 13px;
+  }
+}
