@@ -1,11 +1,16 @@
 import { fetchPost } from "../API/Api";
 import { useQuery } from "@tanstack/react-query";
+import { Loader } from "../components/UI/Loader";
 
 export const FetchRQ = () => {
-  const {data} = useQuery({
+  const {data, isPending} = useQuery({
     queryKey: ["posts"],
     queryFn: fetchPost,
   })
+
+  if (isPending) {
+    return <Loader />;
+  }
 
   
 
